@@ -15,7 +15,7 @@ second type this:
 third type this:
 > sudo cat /var/bccald.state
 
-### explanation of vulnerability 1
+### Explanation of vulnerability 1
 The example here used a message string of length size 110. You can see that there is a Segmentation fault (core dumped) after step 2. After step 3, you can see that the state file did not store the full 110 characters in the message. Only 87 characters were stored.
 
 
@@ -35,5 +35,5 @@ Fourth type this:
 >bccal-list
 
 
-### explanation of vulnerability 2
-After step 4, you can see that the alerts from step 1 and step 2 are now gone. If you go from step 3 to step 4 fast enough you can see the screen print a large amount of alarm events (from the ics file) and a Segmentation fault (core dumped) at the bottom. Although if you wait any longer than a second after step 3, then execute step 4, all messages will be deleted including the alarm events from step 1 and step 2. No alarm events will be displayed in the list.
+### Explanation of vulnerability 2
+After step 4, you can see that the alerts from step 1 and step 2 are now gone. All messages will be deleted and no alarm events will be displayed in the list.
