@@ -6,8 +6,7 @@
 ## Vulnerability 1
 This is replicating first vulnerability explained in the Summary of Findings. If the input message is too large it will give a segmentation fault (core dumped) and will not show the full message that was originally stored.
 
-To exploit this vulnerability do the following:
-First type this:
+To exploit this vulnerability do the following first type this:
 > bccal-add 20201010T100000 hellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellothere
 
 second:
