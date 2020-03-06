@@ -15,6 +15,7 @@ second:
 third:
 > sudo cat /var/bccald.state
 
+### explanation of vulnerability 1
 The example here used a message string of length size 110. You can see that there is a Segmentation fault (core dumped) after step 2. After step 3, you can see that the state file did not store the full 110 characters in the message. Only 87 characters were stored.
 
 
