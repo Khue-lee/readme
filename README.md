@@ -9,8 +9,10 @@ This is replicating first vulnerability explained in the Summary of Findings. If
 To exploit this vulnerability do the following:
 First type this:
 > bccal-add 20201010T100000 hellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellotherehellothere
+
 second:
 > bccal-list
+
 third:
 > sudo cat /var/bccald.state
 
